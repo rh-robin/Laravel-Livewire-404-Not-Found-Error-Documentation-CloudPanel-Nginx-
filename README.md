@@ -50,6 +50,7 @@ location ^~ /livewire/update {
     proxy_pass http://127.0.0.1:8080;
 }
 # --- LIVEWIRE FIX END ---
+```
 
 #### B. Backend Server Block (Port 8080)
 
@@ -87,9 +88,9 @@ SSH into your server and run:
 php artisan livewire:publish --assets
 ```
 This creates:
-public/vendor/livewire/livewire.js
+> public/vendor/livewire/livewire.js
 
 Now Nginx can serve it directly as a static file.
 
 #### Warning
-**Re-run this command** after every `composer update` or Livewire upgrade.
+> **Re-run this command** after every `composer update` or Livewire upgrade.
